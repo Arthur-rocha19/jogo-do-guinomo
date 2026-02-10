@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: url("elderwood.jpg") no-repeat center center/cover;
+    color: #fff;
+}
+
+.overlay {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    color: #f5d76e;
+    text-shadow: 0 0 15px #000;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu button {
+    width: 220px;
+    padding: 12px;
+    font-size: 1.1rem;
+    background: transparent;
+    border: 2px solid #f5d76e;
+    color: #f5d76e;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu button:hover {
+    background: #f5d76e;
+    color: #000;
+}
+
+.start {
+    margin-top: 40px;
+    font-size: 1rem;
+    opacity: 0.8;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+}
